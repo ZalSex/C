@@ -134,10 +134,7 @@ class _SetupScreenState extends State<SetupScreen> with TickerProviderStateMixin
       await _ch.invokeMethod('requestWriteSettings');
       _set(
         'Izinkan "Ubah Pengaturan Sistem"',
-        hint: 'Di Pengaturan Yang Terbuka:
-1. Cari App Ini
-2. Aktifkan Toggle-nya
-3. Kembali Ke App',
+        hint: 'Di Pengaturan Yang Terbuka:\n1. Cari App Ini\n2. Aktifkan Toggle-nya\n3. Kembali Ke App',
         waiting: true,
       );
       for (int i = 0; i < 60; i++) {
